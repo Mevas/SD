@@ -7,7 +7,16 @@ from sorts import Sorter
 class TestSorts(TestCase):
     def setUp(self):
         self.sorter = Sorter()
-        self.test_cases = [[123, 321, 222, 782, 100, 7214], [1, 2, 3, 4], [4, 3, 2, 1], [1], [], [3, 3, 3, 1, 1, 3, 3, 3], [1000000000, 1, 2, 3, 4, 5, 6, 7, 8, 9], random.sample(range(10001), 10000)]
+        self.test_cases = [
+            [123, 321, 222, 782, 100, 7214],
+            [1, 2, 3, 4],
+            [4, 3, 2, 1],
+            [1],
+            [],
+            [3, 3, 3, 1, 1, 3, 3, 3],
+            [1000000000, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            random.sample(range(10001), 10000),
+        ]
 
         self.sorter.start_timer()
 
